@@ -21,8 +21,7 @@ RUN apt-get update && sudo apt-get dist-upgrade && \
     chown -R squeezeboxserver:nogroup /usr/share/squeezeboxserver/ && \
     mkdir -p /var/music && \
     chown -R squeezeboxserver:nogroup /var/music && \
-    mkdir -p /media/music && \
-    ln -s /var/music/ /media && \
+    ln -s /var/music /media/music && \
     apt-get clean autoclean autoremove && \
     rm -rf /var/lib/apt/lists/* && \
     rm /tmp/logitechmediaserver_7.8.0_all.deb
