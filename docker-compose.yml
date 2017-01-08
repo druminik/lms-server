@@ -1,0 +1,10 @@
+subsonic:
+  #build: .
+  image: druminik/lms-server
+  restart: always
+  net: "bridge"
+  ports:
+  - "9000:9000"
+  volumes:
+  - "/media/music:/var/music:ro"
+  container_name: lms-server
