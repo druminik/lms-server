@@ -1,4 +1,4 @@
-subsonic:
+lsm-server:
   #build: .
   image: druminik/lms-server
   restart: always
