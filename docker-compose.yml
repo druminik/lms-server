@@ -5,6 +5,8 @@ subsonic:
   net: "bridge"
   ports:
   - "9000:9000"
+  - "9090:9090"
+  - "3483:3483"
   volumes:
-  - "/media/music:/var/music:ro"
+  - "/media/music:/var/music:rw"
   container_name: lms-server
